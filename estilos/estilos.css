@@ -1,0 +1,258 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS HEADER */
+
+header {
+width: 100vw;
+height: 100px;
+background-color: rgb(54, 53, 52);
+color: white;
+font-size: 1.5rem;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.container-logo{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.list-nav {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* SEPARADOR */
+.separator{
+    width: 100vw;
+    height: 2vh;
+    background-color:  rgb(54, 53, 52);
+}
+
+
+/* ESTILOS HERO */
+
+.hero-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/multimedia/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;    
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(240, 248, 255, 0.886);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding: 50px;
+
+}
+
+@keyframes slider {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+    
+    
+}
+
+.hero-title{
+    font-size: 8vw;
+    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 15px white;
+    animation: slider 1s ease-in ;
+}
+
+.hero-span{
+    font-size: 3vw;
+    align-self: center;
+    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 15px white;
+
+}
+
+/* about us */
+
+.container-us{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #0d0d0f, #1d1e20, #2d2d31, #3d3d42, #4e4e55);
+
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(240, 248, 255, 0.886);
+    font-size: 2rem;
+
+
+}
+.container-us div{
+        height: 100%;
+        background-image: url(/multimedia/about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*cards */
+
+.card-container{
+    width: 100vw;
+    height: 200%;
+    background-image: radial-gradient(circle, #0d0d0f, #1d1e20, #2d2d31, #3d3d42, #4e4e55);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.card{
+    width: 310px;
+    height: 500px;
+    background-color: rgb(73, 77, 77);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(240, 248, 255, 0.886);
+    font-size: 1.5rem;
+    text-shadow: 2px 5px  black ;
+    margin: 5%;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.card-cart{
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+    font-weight: bolder;
+}
+.card-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:  rgb(228, 164, 0);
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(240, 248, 255, 0.886);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+/* contacto */
+
+.contact-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #0d0d0f, #1d1e20, #2d2d31, #3d3d42, #4e4e55);
+    display: flex;
+    justify-content: space-around;
+
+}
+.contact-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-top: 250px;
+}
+.contact-order h3, .contact-data h3{
+    font-family: 'Nothing You Could Do', cursive;
+    color: rgba(240, 248, 255, 0.886);
+    font-size: 2rem;
+}
+.mode-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: rgba(240, 248, 255, 0.886);
+    background-color:  rgb(228, 164, 0)
+}
+.order-btn{
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgba(240, 248, 255, 0.886);
+    background-color:  rgb(228, 164, 0);
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-top: 250px;
+}
+
+.contact-map{
+    width: 300px;
+    height: 300px;
+}
+.contact-link{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgba(240, 248, 255, 0.886);
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 150px;
+    background-image: linear-gradient(to top, #0d0d0f, #1d1e20, #2d2d31, #3d3d42, #4e4e55);
+    display: flex;
+    flex-direction: column;
+    color: rgba(240, 248, 255, 0.886);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ico-footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 2rem;
+}

@@ -3,31 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Burguer Design</title>
 </head>
 <body>
     <header>
         <!-- logo header -->
-        <img src="" alt="">
+        <div class="container-logo">
+            <i class="fa-solid fa-burger ico-logo"></i>
+            <span class="text-logo">Burger Design</span>
+        </div>
         <!-- menu -->
-        <nav>
+        <nav class="container-nav">
             <!-- menu-toggle -->
-            <label for=""><img src="" alt=""></label>
-            <input type="checkbox">
+            <label for="menu-toggle" class="menu-toggle">
+                <i class="fa-solid fa-bars menu-toggle-ico"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle">
             <!-- list menu -->
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="list-nav">
+                <li>Home</li>
+                <li>Quienes somos</li>
+                <li>Menú</li>
+                <li>Clientes en redes</li>
+                <li>Contacto</li>
             </ul>
-            <!-- cart-toggle -->
-            <label for=""><img src="" alt=""></label>
-            <input type="checkbox">
         </nav>
-        
     </header>
+
+    <!-- portada -->
+    <section class="hero-container">
+        <h1 class="hero-title">Burger design</h1>
+        <span class="hero-span">hamburguesas de author.</span>
+    </section>
+    <!-- /portada -->
+
+    <div class="separator"></div>
+
+    <!-- about us -->
+        <section class="container-us">
+            <div>
+                <p>El arte conmbinado con lo culinario se fusionan <br>para dar lugar a Burger Design. <br>
+            Espacio donde lo simple se
+        convierte <br> en una extravagante experiencia de sabores. <br>  <br>
+            - "No hacemos hamburguesas, las diseñamos..." - 
+                </p>
+            </div>
+        </section>
+    <!-- /about us -->
+    <div class="separator"></div>
+
+    <!-- cards -->
+    <section class="card-container">
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu1.png" alt="">
+            <h2 class="card-title">Junkie Cheddar</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 2800</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu2.png" alt="">
+            <h2 class="card-title">Oh my cheesus</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 2500</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu3.png" alt="">
+            <h2 class="card-title">American dream</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 2300</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu4.png" alt="">
+            <h2 class="card-title">Bignac and pop</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 2300</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu5.png" alt="">
+            <h2 class="card-title">Sliders oklahoma</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 1800</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="/multimedia/menu6.png" alt="">
+            <h2 class="card-title">Animal style</h2>
+            <div class="card-cart">
+                <span class="card-precie">$ 2600</span>
+                <button class="card-btn" type="button">Añadir</button>
+            </div>
+        </div>
+    </section>
+    <!-- /cards -->
+    <div class="separator"></div>
+
+<!-- redes -->
+
+    <section class="redes-container">
+            <img src="" alt="">
+
+    </section>
+
+    <div class="separator"></div>
+    <!-- contacto -->
+    <section class="contact-container">
+        <div class="contact-order">
+            <h3>Delivery y take-away</h3>
+            <div>
+                <button class="mode-btn"><i class="fa-solid fa-motorcycle"></i></button>
+                <button class="mode-btn"><i class="fa-solid fa-person-walking"></i></button>
+            </div>
+            <button class="order-btn">Hacé tu pedido</button>
+        </div>
+        <div class="contact-data">
+            <h3>Contáctanos</h3>
+            <a class="contact-link" href="#">www.burgerdesign.com</a>
+            <link rel="stylesheet" href="">
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201169.05461794484!2d-57.60053405!3d-38.01756665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1688087780342!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+    <div class="separator"></div>
+    <footer>
+        <div class="ico-footer">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <h4>Burger design since 2023</h4>
+
+    </footer>
+
+
+
+
     
 </body>
 </html>
